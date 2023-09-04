@@ -1,0 +1,18 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+
+{% include 'header.html' %}
+
+    <form action="formulario-curso.html" method="post">{% csrf_token %}
+
+        {{miFormulario.as_p}}
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+
+
+
+{% endblock contenidoQueCambia %}
+    
